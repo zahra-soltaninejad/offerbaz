@@ -1,4 +1,4 @@
-package dto;
+package ir.alzahra.offerBaz.dto;
 
 import java.util.List;
 

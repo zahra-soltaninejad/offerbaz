@@ -1,4 +1,4 @@
-package dto;
+package ir.alzahra.offerBaz.dto;
 /**
  * @Author: zahra soltaninejad
  * @Date: 4/18/2019, Thu

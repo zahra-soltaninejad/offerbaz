@@ -1,6 +1,6 @@
-package dto;
+package ir.alzahra.offerBaz.dto;
 
-import enums.Gender;
+import ir.alzahra.offerBaz.enums.Gender;
 
 /**
  * @Author: zahra soltaninejad
