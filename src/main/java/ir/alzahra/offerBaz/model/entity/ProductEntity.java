@@ -9,6 +9,8 @@ import java.util.List;
  * @Author: zahra soltaninejad
  * @Date: 4/21/2019, Sun
  **/
+@Entity
+@Table(name="ProductEntity")
 public class ProductEntity extends BaseEntity{
 
     private static final long serialVersionUID = -7140560430822563744L;
@@ -29,4 +31,44 @@ public class ProductEntity extends BaseEntity{
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "BANK_ID")
     private BankDTO bankDTO;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<OfferEntity> getOfferEntityList() {
+        return offerEntityList;
+    }
+
+    public void setOfferEntityList(List<OfferEntity> offerEntityList) {
+        this.offerEntityList = offerEntityList;
+    }
+
+    public BankDTO getBankDTO() {
+        return bankDTO;
+    }
+
+    public void setBankDTO(BankDTO bankDTO) {
+        this.bankDTO = bankDTO;
+    }
 }

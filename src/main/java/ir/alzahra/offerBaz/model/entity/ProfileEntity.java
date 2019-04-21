@@ -13,6 +13,8 @@ import java.util.Set;
  * @Author: zahra soltaninejad
  * @Date: 4/21/2019, Sun
  **/
+@Entity
+@Table(name="ProfileEntity")
 public class ProfileEntity extends BaseEntity{
 
     private static final long serialVersionUID = 7323957813318349601L;
