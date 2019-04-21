@@ -9,6 +9,9 @@ import javax.persistence.*;
  * @Date: 4/21/2019, Sun
  **/
 public class OfferEntity extends BaseEntity{
+
+    private static final long serialVersionUID = 9073510205176823830L;
+
     @Id
     @GeneratedValue
     @Column(name = "Id")

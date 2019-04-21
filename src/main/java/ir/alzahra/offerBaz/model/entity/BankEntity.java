@@ -11,6 +11,8 @@ import java.util.List;
  **/
 public class BankEntity extends BaseEntity{
 
+    private static final long serialVersionUID = -8570263691305690317L;
+
     @Id
     @GeneratedValue
     @Column(name = "Id")

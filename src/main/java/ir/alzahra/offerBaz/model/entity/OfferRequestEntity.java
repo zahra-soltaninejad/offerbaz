@@ -11,6 +11,9 @@ import java.util.List;
  * @Date: 4/21/2019, Sun
  **/
 public class OfferRequestEntity extends BaseEntity{
+
+    private static final long serialVersionUID = -7400819531205311768L;
+
     @Id
     @GeneratedValue
     @Column(name = "Id")

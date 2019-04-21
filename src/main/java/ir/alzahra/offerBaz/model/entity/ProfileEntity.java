@@ -15,6 +15,8 @@ import java.util.Set;
  **/
 public class ProfileEntity extends BaseEntity{
 
+    private static final long serialVersionUID = 7323957813318349601L;
+
     private String userName;
     private String password;
     private boolean enabled;
