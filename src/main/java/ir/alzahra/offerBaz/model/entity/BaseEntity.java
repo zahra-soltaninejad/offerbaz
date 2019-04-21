@@ -25,8 +25,6 @@ public abstract class BaseEntity implements Serializable {
     @Column(name = "UPDATED_BY", length = 40)
     private String updatedBy;
 
-    @Column(name = "REPLACEMENT_FOR", length = 40)
-    private String replacementFor;
 
     @Column(name = "CREATED_AT")
     @Temporal(TemporalType.TIMESTAMP)
@@ -159,18 +157,13 @@ public abstract class BaseEntity implements Serializable {
      *
      * @return the replacement for
      */
-    public String getReplacementFor() {
-        return replacementFor;
-    }
+
 
     /**
      * Sets replacement for.
      *
      * @param replacementFor the replacement for
      */
-    public void setReplacementFor(final String replacementFor) {
-        this.replacementFor = replacementFor;
-    }
 
     /**
      * Sets creation by at.
