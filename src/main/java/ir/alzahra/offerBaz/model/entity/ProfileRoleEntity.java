@@ -16,9 +16,7 @@ import javax.persistence.*;
 public class ProfileRoleEntity  extends BaseEntity{
 
 
-    private static final long serialVersionUID = 5521703395679440177L;
-
-    private int id;
+        private Long id;
         private ProfileEntity profileEntity;
         private String role;
 
@@ -27,11 +25,11 @@ public class ProfileRoleEntity  extends BaseEntity{
     @Id
     @GeneratedValue
     @Column(name = "ID")
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     @ManyToOne(fetch = FetchType.LAZY)
