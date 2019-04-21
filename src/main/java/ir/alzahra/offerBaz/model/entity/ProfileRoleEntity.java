@@ -15,7 +15,7 @@ import javax.persistence.*;
                 columnNames = { "ROLE", "PROFILE_ID" }))
 public class ProfileRoleEntity  extends BaseEntity{
 
-
+    private static final long serialVersionUID = 5521703395679440177L;
         private Long id;
         private ProfileEntity profileEntity;
         private String role;
